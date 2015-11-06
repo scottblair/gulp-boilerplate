@@ -1,0 +1,92 @@
+/*
+-------------------------
+Modules
+-------------------------
+*/
+
+.module {
+	background-color: white;
+	padding: rem-calc(60 0);
+
+	&--collapse {
+		padding: rem-calc(0 0 0 0);
+	}
+
+	&__inner {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: $content-width;
+	}
+
+	&__image {
+		> img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	&__content {
+
+		@media #{$small-up} {
+			padding-bottom: rem-calc(30);
+		}
+
+		@media #{$large-up} {
+			padding-bottom: 0;
+		}
+	}
+
+	// Background Styles
+	&--background {
+
+		&-primary {
+			background-color: $primary-color;
+			color: white;
+		}
+
+		&-secondary {
+			background-color: $secondary-color;
+			color: white;
+		}
+
+		&-lite {
+			background-color: $gray9;
+			border-bottom: 1px solid $gray4;
+			border-top: 1px solid $gray4;
+		}
+
+		&-white {
+			background-color: white;
+			color: $gray8;
+		}
+
+		&-image {
+			background-color: $gray2;
+			background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+	}
+
+	// Content Styles
+	&__header {
+		font-family: $sans;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__emdash {
+		font-family: $sans;
+		font-size: rem-calc(24);
+		font-weight: 700;
+	}
+
+	&__body {
+		font-family: $serif;
+	}
+
+	&__highlight {
+		color: $secondary-color;
+		font-family: $serif;
+	}
+}

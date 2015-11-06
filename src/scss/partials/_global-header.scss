@@ -1,0 +1,172 @@
+/*
+-------------------------
+Header
+-------------------------
+*/
+
+$menu-height: rem-calc(80);
+
+.header {
+	background-color: $primary-color;
+	height: $menu-height;
+	position: relative;
+	z-index: $top;
+
+	.container {
+		padding: 0;
+	}
+
+	&__brand {
+		display: block;
+		float: left;
+		margin-left: rem-calc(15);
+		max-width: rem-calc(293);
+
+		a {
+			display: block;
+			height: rem-calc(80);
+			padding: rem-calc(28 0);
+			width: rem-calc(225);
+
+			.logo {
+				width: 100%;
+			}
+		}
+	}
+
+	.nav-toggle {
+		$toggle-width: 25px;
+		color: white;
+		display: block;
+		font-size: rem-calc(14);
+		height: $menu-height;
+		line-height: $menu-height;
+		padding-left: rem-calc(53);
+		padding-right: rem-calc(20);
+		position: absolute;
+		right: 0;
+		text-transform: uppercase;
+		top: 0;
+
+		&:hover,
+		&.active {
+			background: darken($primary-color, 2%);
+		}
+
+		i,
+		i:before,
+		i:after {
+			background: white;
+			content: "";
+			display: block;
+			height: 3px;
+			left: 0;
+			position: absolute;
+			width: $toggle-width;
+		}
+
+		i {
+			left: 20px;
+			margin-top: -3px;
+			top: 50%;
+
+			&:before {
+				top: -8px;
+			}
+
+			&:after {
+				top: 8px;
+			}
+		}
+	}
+
+	&__nav {
+		background-color: rgba(darken($primary-color, 6%), 0.95);
+		clear: both;
+		display: block;
+		margin: $menu-height 0 0;
+		width: 100%;
+
+		.header__nav__items {
+			padding: rem-calc(20 0);
+
+			.header__nav__item {
+				display: block;
+				height: auto;
+				padding: 0;
+				position: static;
+
+				a {
+					color: white;
+					display: block;
+					font-family: $sans;
+					font-size: rem-calc(16);
+					font-weight: 500;
+					padding: rem-calc(18 0);
+					text-align: center;
+
+					&:active {
+						background: shade($primary-color, 4%);
+					}
+				}
+			}
+		}
+	}
+
+	// Desktop Navigation - Styles
+	@media screen and (min-width: rem-calc(930)) {
+		.container {
+			padding: 0 rem-calc(15);
+		}
+
+		.nav-toggle {
+			display: none;
+		}
+
+		&__brand {
+			margin-left: 0;
+			max-width: none;
+
+			a {
+				padding: rem-calc(30 0);
+				width: auto;
+			}
+		}
+
+		&__nav {
+			background-color: transparent;
+			clear: none;
+			float: right;
+			margin: rem-calc(0 -15 0 0);
+			width: auto;
+
+			.header__nav__items {
+				height: $menu-height;
+				padding: 0;
+				text-align: right;
+
+				.header__nav__item {
+					border-bottom: 0;
+					display: inline;
+
+					&:before {
+						content: "";
+						left: 0;
+						position: relateive;
+					}
+
+					a {
+						color: white;
+						display: inline-block;
+						height: $menu-height;
+						padding: rem-calc(28 15);
+
+						&:hover {
+							background-color: darken($primary-color, 4%);
+						}
+					}
+				}
+			}
+		}
+	}
+}

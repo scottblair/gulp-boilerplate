@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." />
+
+    <script src="https://use.typekit.net/muw0hai.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+
+    {% include '../partials/header.html' %}
+
+    <main class="main slide" role="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include '../partials/footer.html' %}
+
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

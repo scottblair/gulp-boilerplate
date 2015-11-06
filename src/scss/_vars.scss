@@ -1,0 +1,36 @@
+@import 'foundation/functions';
+
+// Brand colors
+$primary-color: #0f3c79;
+$secondary-color: #01a9f0;
+
+// Additional grays
+$gray-lite: #f6f8f9;
+$gray1: #eaeaea;
+$gray2: #dcdcdc;
+$gray3: #cfcfcf;
+$gray4: #b6b6b6;
+$gray5: #aaaaaa;
+$gray6: #888888;
+$gray7: #555555;
+$gray8: #333333;
+$gray9: #f9f7f8;
+
+// Status colors
+$infoBlue: #4A90E2;
+$errorRed: #D0021B;
+
+// Fonts
+$sans: 'proxima-nova', 'Helvetica Neue', Helvetica, sans-serif;
+$serif: 'freight-display-pro', serif;
+$icons: 'fontawesome';
+
+// Widths
+$content-width: rem-calc(1230);
+$overflow-width: rem-calc(1430);
+$max-width: rem-calc(1600);
+
+// Z-index layers
+$top: 1000;
+$middle: 500;
+$bottom: 100;

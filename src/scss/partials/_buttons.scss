@@ -1,0 +1,60 @@
+/*
+-------------------------
+Buttons
+-------------------------
+*/
+
+a {
+	color: $secondary-color;
+
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+button, .button {
+	appearance: none;
+	background: $primary-color;
+	border: none;
+	color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $sans;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: normal;
+    margin: rem-calc(0 0 20);
+	padding: rem-calc(19 40 20);
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+	transition: all 0.1s ease;
+
+	&__hollow {
+		background-color: transparent;
+		border: 3px solid white;
+		text-transform: uppercase;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: $secondary-color;
+			border-color: $secondary-color;
+		}
+	}
+
+	&--secondary {
+		background-color: transparent;
+		border: 3px solid $secondary-color;
+		color: $secondary-color;
+
+		&:hover,
+		&:active,
+		&:focus {
+			background: $secondary-color;
+			border-color: $secondary-color;
+			color: white;
+		}
+	}
+}

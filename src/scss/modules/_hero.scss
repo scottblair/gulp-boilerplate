@@ -1,0 +1,51 @@
+/*
+-------------------------
+Module - Hero
+-------------------------
+*/
+
+.module--hero {
+	min-height: rem-calc(550);
+	padding-top: rem-calc(120);
+
+	.module {
+		
+		&__header {
+			color: white;
+			padding-bottom: rem-calc(5);
+			text-align: center;
+			text-transform: none;
+		}
+
+		&__body {
+			color: white;
+			font-family: $sans;
+			font-size: rem-calc(18);
+			font-weight: 700;
+			padding-bottom: rem-calc(40);
+			text-align: center;
+		}
+
+		&__button {
+			text-align: center;
+		}
+	}
+
+	@media #{$small-up}	{
+		.module__content {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.module__body {
+			font-size: rem-calc(21);
+		}
+	}
+
+	@include respond-to($overflow-width) {
+		.module__content {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/*
+-------------------------
+Global
+-------------------------
+*/
+
+body {
+	background-color: $gray-lite;
+	color: $gray8;
+	font-family: $sans;
+	font-size: rem-calc(17);
+}
+
+.main {
+    background: white;
+}
+
+.site-content {
+    margin: 0 auto;
+    max-width: $overflow-width;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $content-width;
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+    width: 100%;
+    @include clearfix;
+}
+
+.section {
+    padding: rem-calc(30 0);
+
+    @media #{$medium-up} {
+        padding: rem-calc(60 0);
+    }
+}
+
+.row.row-wide {
+    max-width: $overflow-width;
+}

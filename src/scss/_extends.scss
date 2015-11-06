@@ -1,0 +1,8 @@
+// Module styles
+%moduleAlternating {
+    border-bottom: 1px solid $gray4;
+
+    &:nth-child(odd) {
+        background-color: $gray-lite;
+    }
+}

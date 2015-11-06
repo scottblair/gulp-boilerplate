@@ -1,0 +1,22 @@
+/*
+-------------------------
+Carousels
+-------------------------
+*/
+
+.carousel {
+
+	&--one-up {
+		padding: rem-calc(0);
+	}
+
+	&--three-up {
+		max-width: $max-width;
+		padding: rem-calc(60 0 0 0);
+	}
+
+	img {
+		border-radius: 400px;
+  		border: 16px solid $gray1;
+	}
+}

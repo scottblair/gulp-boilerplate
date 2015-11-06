@@ -1,0 +1,29 @@
+/*
+-------------------------
+Forms
+-------------------------
+*/
+
+form {
+
+	.button--input {
+		margin-top: rem-calc(30);
+	}
+
+	input[type="text"], input[type="email"], textarea {
+		font-size: rem-calc(24);
+		padding: rem-calc(28 14);
+	}
+
+	label,
+	.label {
+		color: $gray8;
+		font-size: rem-calc(18);
+		font-weight: 700;
+		padding-bottom: rem-calc(5);
+
+		&.label--lite {
+			font-weight: 300;
+		}
+	}
+}

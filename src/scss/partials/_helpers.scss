@@ -1,0 +1,48 @@
+/*
+-------------------------
+Helpers
+-------------------------
+*/
+
+// Some utility classes are already available through Foundation
+// See http://foundation.zurb.com/docs/utility-classes.html
+
+// Collapse margins and padding
+.collapse-top { margin-top: 0 !important; padding-top: 0 !important; }
+.collapse-bottom { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.collapse-right { margin-right: 0 !important; padding-right: 0 !important; }
+.collapse-left { margin-left: 0 !important; padding-left: 0 !important; }
+
+// Collapse Margins
+.collapse-margin { margin: 0 !important; }
+.collapse-margin-top { margin-top: 0 !important; }
+.collapse-margin-bottom { margin-bottom: 0 !important; }
+.collapse-margin-right { margin-right: 0 !important; }
+.collapse-margin-left { margin-left: 0 !important; }
+
+// Collapse Paddings
+.collapse-padding { padding: 0 !important; }
+.collapse-padding-top { padding-top: 0 !important; }
+.collapse-padding-bottom { padding-bottom: 0 !important; }
+.collapse-padding-right { padding-right: 0 !important; }
+.collapse-padding-left { padding-left: 0 !important; }
+
+// Floats
+.fl-left { float: left; }
+.fl-right { float: right; }
+.fl-clear { float: none; clear: both; }
+
+// Colors
+.color-inherit { color: inherit; }
+.color-neutral {color: $gray5;}
+.color-info {color: $infoBlue;}
+.color-alert {color: $errorRed;}
+
+// Text
+.text-italics { font-style: italic; }
+.text-normal { font-style: normal; }
+.text-initial { text-transform: initial; }
+
+// Borders
+.border-right { border-right: 1px solid $gray4; }
+.border-bottom { border-bottom: 1px solid $gray4; }

@@ -1,0 +1,22 @@
+{
+  "name": "boildrplate",
+  "homepage": "",
+  "authors": [
+    "jon@analyticl.com",
+    "sblair@neteragroup.com"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.3",
+    "fontawesome": "~4.3.0",
+    "foundation": "~5.5.2",
+    "responsive-nav": "~1.0.39",
+    "slick-carousel": "~1.5.8"
+  }
+}
